@@ -2,7 +2,9 @@
 
 body{
     font-family: 'Poppins';
-    background-color: darkgreen;
+    background: linear-gradient(45deg, #08d958 0%, #0cfc28 100%), radial-gradient(100% 225% at 100% 0%, #9dda0f 0%, #000000 100%), linear-gradient(225deg, #b300ff 0%, #000000 100%), linear-gradient(135deg, #05fb98 10%, #21f505 35%, #009F9D 35%, #06ef82 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+    background-blend-mode: screen, overlay, hard-light, normal; 
+
 }
 
 .cabecalho{
@@ -25,6 +27,16 @@ body{
     height: 100%;
 }
 
+.img-tt{
+    margin-left: 50px;
+}
+
+.bem10{
+    margin-right: 200px;
+    margin-bottom:200px;
+    margin-left: 5px;
+}
+
 .cabecalho nav li a {
     font-weight: bold;
     color: aliceblue;
@@ -37,3 +49,90 @@ body{
 .cabecalho nav li a:hover{
     background-color: chartreuse;
 }
+
+.container{
+    max-width: 1440px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 30px;
+}
+.container .imagem-titulo{
+    max-width: 500px;
+}
+
+.container .descricao{
+    color: aliceblue;
+    width: 400px;
+    font-size: 18px;
+    margin: 40px;
+    text-align: center;
+
+}
+
+.container .botao-trailer{
+    background-color: black;
+    color: chartreuse;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.container .botao-trailer:hover{
+    transform: scale(1.1);
+}
+
+.fundo-video{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.conteudo-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+}
+
+.fechar-modal{
+    background-color: black;
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal iframe{
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto{
+    opacity: 1;
+    visibility: visible;
+}
+
