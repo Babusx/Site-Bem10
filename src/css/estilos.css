@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Poppins';
-    background: linear-gradient(45deg, #08d958 0%, #0cfc28 100%), radial-gradient(100% 225% at 100% 0%, #9dda0f 0%, #000000 100%), linear-gradient(225deg, #b300ff 0%, #000000 100%), linear-gradient(135deg, #05fb98 10%, #21f505 35%, #009F9D 35%, #06ef82 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+    background: linear-gradient(45deg, #016427 0%, #0cfc28 100%), radial-gradient(100% 225% at 100% 0%, #9dda0f 0%, #43f203 100%), linear-gradient(225deg, #04820a 0%, #000000 100%), linear-gradient(135deg, #05fb98 10%, #21f505 35%, #009F9D 35%, #06ef82 60%, #07456F 60%, #07456F 67%, #2cd2e8 67%, #766ccd 100%);
     background-blend-mode: screen, overlay, hard-light, normal; 
 
 }
